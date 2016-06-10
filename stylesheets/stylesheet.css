@@ -65,6 +65,7 @@ a.letra{
   width:15em;
   margin-top: 8em;
   width: 100%;
+  font-size: 0.9em;
 }
 h2{
   font-size: 1em;
@@ -83,7 +84,7 @@ h2{
 .mostrar-respuesta{
   position: absolute;
   top:10em;
-  left:12em;
+  left:13em;
   display: none;
 }
 .respuesta{
