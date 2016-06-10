@@ -214,6 +214,7 @@
             console.log("cacafuto" + $(this).attr('href'));
             $( '.pregunta-container').hide();
             $( '.respuesta').hide();
+            $( $(this).attr('href') + ".cabecera:after").css("content",$(this).attr('href').css("content"));
             $( $(this).attr('href')).fadeIn();
             $(".mostrar-respuesta").fadeIn();
             $(this).css('background-color','green');
