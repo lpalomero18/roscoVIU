@@ -14,7 +14,7 @@ a.letra:hover{
   height: 40em;
   padding: 2.8em;
   border-radius: 50%;
-  margin: 5em auto 0;
+  margin: 12em auto 0;
 }
 a.letra{
   background-color: darkred;
@@ -97,4 +97,42 @@ footer span{
 footer ul{
   font-size: 1.5em;
   font-weight: bold;
+}
+#seccion-puntuacion{
+   text-align: center;
+}
+.puntuacion-puntos{
+  font-size: 3em;
+  font-weight: bold;
+}
+.puntuacion-container{
+  border: solid 1px black;
+  padding: 0;
+}
+.cabecera-puntuacion{
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.equipo1 .cabecera-puntuacion{
+  background: red;
+}
+.equipo2 .cabecera-puntuacion{
+  background: blue;
+  color: #DDDDDD;
+}
+.puntuacion-arrows{
+font-size: 2em;
+cursor: pointer;
+margin: 0.5em 0 0;
+padding: 0;
+}
+.puntuacion-arrows span{
+margin:  0.1em 0 0;
+padding: 0;
+}
+.subcontainer{
+  margin: 0;
+  padding: 0;
 }

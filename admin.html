@@ -11,8 +11,9 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
    
+        <script src="javascripts/Bacon.js"></script>
 
-    <title>Roscoviu</title>
+    <title>Roscoviu - Página de administración</title>
   </head>
 
   <body>
@@ -40,12 +41,24 @@
         </header>
         <section id="seccion-puntuacion" class="clearfix col-xs-12">
           <div class="puntuacion-container equipo1  col-md-2 col-md-offset-4 col-sm-3 col-sm-offset-3 col-xs-3 col-xs-offset-3">
-            <span class="cabecera-puntuacion">Equipo 1</span>
-            <span class="puntuacion-puntos">0</span>
+            <div class="subcontainer col-xs-9">
+              <span class="cabecera-puntuacion">Equipo 1</span>
+              <span class="puntuacion-puntos">0</span>
+            </div>
+            <div class="puntuacion-arrows col-xs-3">
+              <span class="glyphicon glyphicon-triangle-top col-xs-12"></span>
+              <span class="glyphicon glyphicon-triangle-bottom  col-xs-12"></span>
+            </div>
           </div>
           <div class="puntuacion-container equipo2  col-md-2 col-sm-3 col-xs-3 ">
-            <span class="cabecera-puntuacion">Equipo 2</span>
-            <span class="puntuacion-puntos">0</span>
+            <div class="subcontainer col-xs-9">
+              <span class="cabecera-puntuacion">Equipo 2</span>
+              <span class="puntuacion-puntos">0</span>
+            </div>
+            <div class="puntuacion-arrows col-xs-3">
+              <span class="glyphicon glyphicon-triangle-top col-xs-12"></span>
+              <span class="glyphicon glyphicon-triangle-bottom  col-xs-12"></span>
+            </div>
           </div>
         </section>
         <section id="rosco" class="clearfix container">
@@ -233,7 +246,7 @@
             $('.respuesta').fadeIn('slow');
           });
         </script>
-        <script src="javascripts/main.js"></script>
+        <script src="javascripts/main-admin.js"></script>
   </body>
 
 </html>
