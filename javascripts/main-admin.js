@@ -11,7 +11,8 @@
 		up2.map(1).merge(down2.map(-1)).scan(0, function(x,y){return x+y});
 	// See the Configuring section to configure credentials in the SDK
 //	AWS.config.update({accessKeyId: 'AKIAIPYYGPZCQTRWPI4Q', secretAccessKey: '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'});
-	AWS.config.update({accessKeyId: 'AKIAJHQULZ244VZ5NLUA', secretAccessKey: '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'});
+//	AWS.config.update({accessKeyId: 'AKIAJHQULZ244VZ5NLUA', secretAccessKey: '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'});
+	AWS.config.update({accessKeyId: 'AKIAJ2WCJKVTHJOAALJA', secretAccessKey: '/flz1oiJKdwquQCy3lXfpBFFVfrBM9awryj0Aa2r'});
 
   	// Configure your region
   	AWS.config.region = 'eu-west-1';
