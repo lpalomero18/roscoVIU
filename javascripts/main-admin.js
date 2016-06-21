@@ -45,17 +45,26 @@ function coge_ajax(url_name, container){
   	var bucket = new AWS.S3({params: {Bucket: 'pruebas-luis'}});
 	counter1.assign($('.equipo1 .puntuacion-puntos'), 'text');
 	counter2.assign($('.equipo2 .puntuacion-puntos'), 'text');
-	var contenido;
+	var contenido1;
+	var contenido2;
 	function actualiza(){
-		var temporal =$('.equipo1 .puntuacion-puntos').text();
-		if (contenido != temporal ) {
-			contenido = temporal;		
-			var params =			{Key: 'equipo1.txt', ACL: 'public-read', Body: contenido}
+		var temporal1 =$('.equipo1 .puntuacion-puntos').text();
+		var temporal2 =$('.equipo2 .puntuacion-puntos').text();
+		if (contenido1 != temporal1 ) {
+			contenido1 = temporal1;		
+			var params =			{Key: 'equipo1.txt', ACL: 'public-read', Body: contenido1}
 			console.log(params);
 			bucket.upload( params, function(err, data){
-			console.log(err + " " + data);
-		});
-
+				console.log(err + " " + data);
+			});
+		}
+		if (contenido2 != temporal2 ) {
+			contenido2 = temporal2;		
+			var params =			{Key: 'equipo2.txt', ACL: 'public-read', Body: contenido2}
+			console.log(params);
+			bucket.upload( params, function(err, data){
+				console.log(err + " " + data);
+			});
 		}
 		setTimeout(actualiza, 1000);
 	}	
