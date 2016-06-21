@@ -41,7 +41,7 @@
 				console.log(err + " " + data);
 			});
 		}
-		setTimeout(actualiza, 1000);
+		setTimeout(actualiza, 500);
 	}	
 	actualiza();
 

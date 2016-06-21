@@ -1,14 +1,10 @@
 
- function observa(){
-
-	$(".equipo1 .puntuacion-puntos").load('https://s3-eu-west-1.amazonaws.com/pruebas-luis/equipo1.txt');
-	$(".equipo2 .puntuacion-puntos").load('https://s3-eu-west-1.amazonaws.com/pruebas-luis/equipo2.txt');
-}
+ 
 setInterval(function(){
 		$(".equipo1 .puntuacion-puntos").load('https://s3-eu-west-1.amazonaws.com/pruebas-luis/equipo1.txt');
 		$(".equipo2 .puntuacion-puntos").load('https://s3-eu-west-1.amazonaws.com/pruebas-luis/equipo2.txt');
 	}
-	,2000);
+	,1500);
 
 $( ".letra" ).click(function(){
 	$( '.pregunta-container').hide();

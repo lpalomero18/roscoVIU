@@ -1,6 +1,15 @@
 *{
     box-sizing:border-box;
   }
+  body.administracion{
+    background-color: lightcoral;
+  }
+h1, h2{
+  text-align: center;
+}
+.nombres{
+  font-size: 0.8em;
+}
 a.letra, a.letra:hover, a.letra:visited{
   color: white;
   text-decoration: none;
@@ -93,10 +102,6 @@ h2{
 footer span{
   clear: both;
   text-align: center;
-}
-footer ul{
-  font-size: 1.5em;
-  font-weight: bold;
 }
 #seccion-puntuacion{
    text-align: center;
