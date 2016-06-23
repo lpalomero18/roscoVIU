@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <!-- jQuery -->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+   
+        <script src="javascripts/Bacon.js"></script>
+        <script src="javascripts/aws-sdk-2.4.0.min.js"></script>
+    <title>Roscoviu - Página de administración</title>
+  </head>
+
+  <body class="administracion">
+
+
+    <div id="container">
+      <div class="inner container">
+
+        <header>
+          <h1>Rosco - Página de administración</h1>
+          </header>
+        <section id="seccion-puntuacion" class="clearfix col-xs-12">
+          <div class="puntuacion-container equipo1  col-md-2 col-md-offset-4 col-sm-3 col-sm-offset-3 col-xs-3 col-xs-offset-3">
+            <div class="subcontainer col-xs-9">
+              <span class="cabecera-puntuacion">Equipo 1</span>
+              <span class="puntuacion-puntos">0</span>
+            </div>
+            <div class="puntuacion-arrows col-xs-3">
+              <span class="glyphicon glyphicon-triangle-top col-xs-12"></span>
+              <span class="glyphicon glyphicon-triangle-bottom  col-xs-12"></span>
+            </div>
+          </div>
+          <div class="puntuacion-container equipo2  col-md-2 col-sm-3 col-xs-3 ">
+            <div class="subcontainer col-xs-9">
+              <span class="cabecera-puntuacion">Equipo 2</span>
+              <span class="puntuacion-puntos">0</span>
+            </div>
+            <div class="puntuacion-arrows col-xs-3">
+              <span class="glyphicon glyphicon-triangle-top col-xs-12"></span>
+              <span class="glyphicon glyphicon-triangle-bottom  col-xs-12"></span>
+            </div>
+          </div>
+        </section>
+        <section id="rosco" class="clearfix container">
+          <a href="#pregunta-1" class="letra" role="button" id="letra-01">A</a>
+          <a href="#pregunta-2" class="letra" role="button" id="letra-02">B</a>
+          <a href="#pregunta-3" class="letra" role="button" id="letra-03">C</a>
+          <a href="#pregunta-4" class="letra" role="button" id="letra-04">D</a>
+          <a href="#pregunta-5" class="letra" role="button" id="letra-05">E</a>
+          <a href="#pregunta-6" class="letra" role="button" id="letra-06">F</a>
+          <a href="#pregunta-7" class="letra" role="button" id="letra-07">G</a>
+          <a href="#pregunta-8" class="letra" role="button" id="letra-08">H</a>
+          <a href="#pregunta-9" class="letra" role="button" id="letra-09">I</a>
+          <a href="#pregunta-10" class="letra" role="button" id="letra-10">J</a>
+          <a href="#pregunta-11" class="letra" role="button" id="letra-11">K</a>
+          <a href="#pregunta-12" class="letra" role="button" id="letra-12">L</a>
+          <a href="#pregunta-13" class="letra" role="button" id="letra-13">M</a>
+          <a href="#pregunta-14" class="letra" role="button" id="letra-14">N</a>
+          <a href="#pregunta-15" class="letra" role="button" id="letra-15">O</a>
+          <a href="#pregunta-16" class="letra" role="button" id="letra-16">P</a>
+          <a href="#pregunta-17" class="letra" role="button" id="letra-17">Q</a>
+          <a href="#pregunta-18" class="letra" role="button" id="letra-18">R</a>
+          <a href="#pregunta-19" class="letra" role="button" id="letra-19">S</a>
+          <a href="#pregunta-20" class="letra" role="button" id="letra-20">T</a>
+          <a href="#pregunta-21" class="letra" role="button" id="letra-21">U</a>
+          <a href="#pregunta-22" class="letra" role="button" id="letra-22">V</a>
+          <a href="#pregunta-23" class="letra" role="button" id="letra-23">W</a>
+          <a href="#pregunta-24" class="letra" role="button" id="letra-24">X</a>
+          <a href="#pregunta-25" class="letra" role="button" id="letra-25">Y</a>
+          <a href="#pregunta-26" class="letra" role="button" id="letra-26">Z</a>
+          <div id="preguntas" class="center-block">
+           <div class='pregunta-container collapse' id='pregunta-1'>
+              <h2 class='cabecera'>Comienza por...A</h2>
+              <div class='pregunta'>Compañía que fabricó el ordenador personal "Lisa"</div>
+              <div class='respuesta'>Apple Computer</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-2'>
+              <h2 class='cabecera'>Comienza por...B</h2>
+              <div class='pregunta'>Todos los contenidos del currículo de Matemáticas están organizados en...</div>
+              <div class='respuesta'>Bloques</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-3'>
+              <h2 class='cabecera'>Comienza por...C</h2>
+              <div class='pregunta'>Computador creado para descifrar los mensajes de Enigma durante la Segunda Guerra Mundia</div>
+              <div class='respuesta'>Colossus</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-4'>
+              <h2 class='cabecera'>Comienza por...D</h2>
+              <div class='pregunta'>El concepto de "unidad temática" (Tema) ha sido sustituído por el de "unidad ...</div>
+              <div class='respuesta'>Didáctica</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-5'>
+              <h2 class='cabecera'>Comienza por...E</h2>
+              <div class='pregunta'>Jean Dieudonne quería que este mátemático griego se fuera abajo</div>
+              <div class='respuesta'>Euclides</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-6'>
+              <h2 class='cabecera'>Comienza por...F</h2>
+              <div class='pregunta'>Sobrenombre de Leonardo de Pisa</div>
+              <div class='respuesta'>Fibonacci</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-7'>
+              <h2 class='cabecera'>Comienza por...G</h2>
+              <div class='pregunta'>En secundaria, las matemáticas se dividen en 6 bloques: Contenidos comunes, Números, Álgebra, Funciones y gráficas, Estadística y probabilidad, y...</div>
+              <div class='respuesta'>Geometría</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-8'>
+              <h2 class='cabecera'>Comienza por...H</h2>
+              <div class='pregunta'>Una de las tres secciones cónicas estudiadas por Apolonio</div>
+              <div class='respuesta'>Hipérbola</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-9'>
+              <h2 class='cabecera'>Comienza por...I</h2>
+              <div class='pregunta'>Nombre de pila del autor de "Philosophiæ Naturalis Principia Mathematica"</div>
+              <div class='respuesta'>Isaac (Newton)</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-10'>
+              <h2 class='cabecera'>Contiene...J</h2>
+              <div class='pregunta'>Etapa del proceso de enseñanza-aprendizaje que está entre Planificación y Evaluación</div>
+              <div class='respuesta'>Ejecución</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-11'>
+              <h2 class='cabecera'>Comienza por...K</h2>
+              <div class='pregunta'>Nombre de pila del científico que acuñó el término "informática" por primera vez.</div>
+              <div class='respuesta'>Karl (Steinbuch)</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-12'>
+              <h2 class='cabecera'>Comienza por...L</h2>
+              <div class='pregunta'>Apellido del inventor de la primera calculadora de propósito general</div>
+              <div class='respuesta'>Leibniz</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-13'>
+              <h2 class='cabecera'>Comienza por...M</h2>
+              <div class='pregunta'>Ciencia deductiva que estudia las propiedades de los entes abstractos según la RAE</div>
+              <div class='respuesta'>Matemáticas</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-14'>
+              <h2 class='cabecera'>Comienza por...N</h2>
+              <div class='pregunta'>Matemático escocés, célebre por desarrollar los logarítmos.</div>
+              <div class='respuesta'>Napier</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-15'>
+              <h2 class='cabecera'>Comienza por...O</h2>
+              <div class='pregunta'>Paquete de tratamiento estadístico que se puede enseñar a alumnos de Humanidades</div>
+              <div class='respuesta'>ORIGIN</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-16'>
+              <h2 class='cabecera'>Comienza por...P</h2>
+              <div class='pregunta'>Corriente de pensamiento respecto a la didáctica en Matemáticas antagonista a la idealista</div>
+              <div class='respuesta'>Práctica</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-17'>
+              <h2 class='cabecera'>Contiene...Q</h2>
+              <div class='pregunta'>Inició la revolución antiplatónica.</div>
+              <div class='respuesta'>Arquímedes</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-18'>
+              <h2 class='cabecera'>Comienza por...R</h2>
+              <div class='pregunta'>¿Como debe ser el uso de la calculadora en la docencia de las matemáticas?</div>
+              <div class='respuesta'>Racional</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-19'>
+              <h2 class='cabecera'>Comienza por...S</h2>
+              <div class='pregunta'>Civilización que hizo los documentos matemáticos más antiguos que se conservan</div>
+              <div class='respuesta'>Sumerios</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-20'>
+              <h2 class='cabecera'>Contiene...T</h2>
+              <div class='pregunta'>Enfoque en la enseñanza que considera las matemáticas como una ciencia lógico-deductiva</div>
+              <div class='respuesta'>Estructuralismo</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-21'>
+              <h2 class='cabecera'>Comienza por...U</h2>
+              <div class='pregunta'>Sistema operativo creado por Kenneth Thompson y Dennis Ritchie trabajando para AT&T</div>
+              <div class='respuesta'>UNIX</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-22'>
+              <h2 class='cabecera'>Comienza por...V</h2>
+              <div class='pregunta'>Matematización que consiste en el tratamiento específicamente matemático de las situaciones</div>
+              <div class='respuesta'>(matematización) Vertical</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-23'>
+              <h2 class='cabecera'>Comienza por...W</h2>
+              <div class='pregunta'>Páginas de las que está hecha Internet</div>
+              <div class='respuesta'>Web</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-24'>
+              <h2 class='cabecera'>Contiene...X</h2>
+              <div class='pregunta'>Sistema Operativo de código libre</div>
+              <div class='respuesta'>Linux</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-25'>
+              <h2 class='cabecera'>Contiene...Y</h2>
+              <div class='pregunta'>Tipo de geometría desarrollada, entre otros, por Pascal y Desargues</div>
+              <div class='respuesta'>(Geometría) Proyectiva</div>
+            </div>
+            <div class='pregunta-container collapse'  id='pregunta-26'>
+              <h2 class='cabecera'>Contiene...Z</h2>
+              <div class='pregunta'>Apellido del otro Steve que fundó Apple Computer</div>
+              <div class='respuesta'>Wozniac</div>
+            </div>
+          </div>
+          <button class="mostrar-respuesta btn btn-primary center-block">Mostrar respuesta</button>
+        </section>
+
+        <hr>
+
+        <footer class="container">
+          <span class="clearfix center-block">Esta web no es compatible con Internet Explorer 9 o inferior.</span>
+        </footer>
+
+        
+      </div>
+    </div>
+        <script type="text/javascript">
+          
+          $( ".letra" ).click(function(){
+            $( '.pregunta-container').hide();
+            $( '.respuesta').hide();
+            $( $(this).attr('href')).fadeIn();
+            $(".mostrar-respuesta").fadeIn();
+            $(this).css('background-color','green');
+          });
+
+          $( ".mostrar-respuesta" ).click(function(){
+            $('.respuesta').fadeIn('slow');
+          });
+        </script>
+        <script src="javascripts/test.js"></script>
+  </body>
+
+</html>

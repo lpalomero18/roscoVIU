@@ -1,9 +1,19 @@
 
- 
+ function traeResultado(resultado){
+     $.ajax({
+         url: "https://kvstore.p.mashape.com/collections/Rosco1/items/"+resultado,
+         type: "GET",
+         beforeSend: function(xhr){xhr.setRequestHeader( "X-Mashape-Key", "UIa0IbsfgymshsTftxvy025ixl5jp1hNvzkjsnyE97ieLBWNX7");},
+         success: function(result, status) { 
+            $('.'+resultado+' .puntuacion-puntos').text(result.value);
+            console.log(result.value+" "+ status); 
+        }
+  });
+ }
 setInterval(function(){
-		$(".equipo1 .puntuacion-puntos").load('https://s3-eu-west-1.amazonaws.com/pruebas-luis/equipo1.txt');
-		$(".equipo2 .puntuacion-puntos").load('https://s3-eu-west-1.amazonaws.com/pruebas-luis/equipo2.txt');
-	}
+    traeResultado('equipo1');
+    traeResultado('equipo2');
+  	}
 	,1500);
 
 $( ".letra" ).click(function(){
@@ -18,3 +28,4 @@ $( ".letra" ).click(function(){
 $( ".mostrar-respuesta" ).click(function(){
 	$('.respuesta').fadeIn('slow');
 });
+
